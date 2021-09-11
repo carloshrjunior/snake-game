@@ -20,6 +20,7 @@ body {
     color: #141414;
     font-size: 3rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 1rem 2rem;
     text-transform: uppercase;
     width: 512px;
@@ -27,6 +28,7 @@ body {
 
 .instructions {
     color: #fff;
+    margin: 2rem 0;
 }
 
 .instructions-title {
@@ -44,6 +46,25 @@ body {
     margin-bottom: .5rem;
 }
 
+.contact {
+    margin-top: 1.35rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact-link {
+    color: inherit;
+}
+
+.contact-link:hover {
+    color: #fdff7e;
+}
+
+.fab,.fas {
+    font-size: 1.6rem;
+}
+
 .footer {
     background-color: #000;
     box-sizing: border-box;
@@ -53,13 +74,24 @@ body {
     width: 100%;
 }
 
-.contact {
-    margin-top: 1.35rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
 
-.fab,.fas {
-    font-size: 1.6rem;
+/* responsive */
+
+@media screen and (max-width: 511px) {
+    .canvas {
+        width: 100vw;
+    }
+
+    .title {
+        width: 100vw;
+    }
+
+    .instructions {
+        margin: 0 auto;
+        width: 75vw;
+    }
+
+    .instructions-list {
+        font-size: .85rem;
+    }
 }
