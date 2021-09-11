@@ -55,6 +55,7 @@ body {
 
 .contact-link {
     color: inherit;
+    transition: color .3s ease-in-out;
 }
 
 .contact-link:hover {
